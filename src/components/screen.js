@@ -1,7 +1,7 @@
 import React from "react"
 import './style/page/page.css'
 
-const list = ["nitrogen-cycle", "usfulness", "pro", "fishkeeping", "problem", "plant"]
+ 
 const textlist = [
     <div>
 <div className="chevron-parent" id="nitrogen-cycle-unlink"><i className="fa fa-chevron-left"></i></div>
@@ -65,7 +65,7 @@ const textlist = [
     <p>Surprisingly, <strong>aquaponics uses about 90% less water than conventional farming</strong>.
         This is because the water present in the system has a much lower surface area,
         so less is lost from evaporation.<br/>
-        Source: <a target="_blank" className="source-link" href="https://smallgarden-ideas.com/pros-and-cons-of-aquaponics">https://smallgarden-ideas.com/pros-and-cons-of-aquaponics</a>
+        Source: <a target="_blank" className="source-link" rel="noopener noreferrer" href="https://smallgarden-ideas.com/pros-and-cons-of-aquaponics">https://smallgarden-ideas.com/pros-and-cons-of-aquaponics</a>
 
     </p>
     <h2>Faster plant growth</h2>
@@ -176,7 +176,7 @@ class Screen extends React.Component{
             <div id={this.props.sname}>
                 { textlist[this.props.num] }
                 <div className="img-page">
-                    <img className="img" src={this.props.img}/>
+                    <img className="img" src={this.props.img} alt="background" />
                 </div>
             </div>
         )

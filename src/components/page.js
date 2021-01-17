@@ -4,7 +4,6 @@ import aquaImg from '../img/aquaponic.jpg'
 import scemeImg from "../img/aquaponics.png"
 import nitrogen from "../img/nitrogen.jpg"
 import nitro from "../img/nitro.png"
-import Graph from './graph'
 import fish2 from "../img/fish-2.png"
 import fish3 from "../img/fish-3.png"
 import fish4 from "../img/fish-4.png"
@@ -86,10 +85,10 @@ class Page extends React.Component{
                     <h1 id="title">More food<br/>for&nbsp;<span id="typetext"> </span></h1>
 
                 </div>
-                <img src={fish2} id="fish-icon-1" className="fish"/>
-                <img src={fish3} id="fish-icon-2" className="fish"/>
-                <img src={fish4} id="fish-icon-3" className="fish"/>
-                <img src={fish5} id="fish-icon-4" className="fish"/>
+                <img src={fish2} id="fish-icon-1" alt="Fish Icon 1" className="fish"/>
+                <img src={fish3} id="fish-icon-2" alt="Fish Icon 2" className="fish"/>
+                <img src={fish4} id="fish-icon-3" alt="Fish Icon 3" className="fish"/>
+                <img src={fish5} id="fish-icon-4" alt="Fish Icon 4" className="fish"/>
             </div>
         )
       }
@@ -113,7 +112,7 @@ class Page extends React.Component{
                 <h3 className="link pro-link">What are the advantages of this system over standard agriculture? <i className="fa fa-chevron-right"></i></h3>
               </div>
             </div>
-            <div className="scemeImg-div"><img src={scemeImg} className="scemeImg"/></div>
+            <div className="scemeImg-div"><img src={scemeImg} className="scemeImg" alt="Screen" /></div>
           </div>
         )
       }
@@ -143,7 +142,7 @@ class Page extends React.Component{
                 </div>
               </div>
               <div className="img-div">
-                <img className="img" src={fullsystem}/>
+                <img className="img" alt="Full System" src={fullsystem}/>
               </div>
           </div>
         )
@@ -182,18 +181,18 @@ class Page extends React.Component{
                 <ul>
                   <li>One more Cast. <em>DIY AQUAPONICS System for 10 Gallon Fish Tank.</em> 2019.  
                   URL Addresses: 
-                  &nbsp;<a target="_blank" className="link-source" href="https://www.youtube.com/watch?v=hKWREFjNWX4&ab_channel=OneMoreCast">https://www.youtube.com/watch?v=hKWREFjNWX4&ab_channel=OneMoreCast</a>,  &nbsp; 
-                  &nbsp;<a target="_blank" className="link-source" href="https://www.youtube.com/watch?v=JJZcSHQFex8&feature=emb_logo&ab_channel=OneMoreCast">https://www.youtube.com/watch?v=JJZcSHQFex8&feature=emb_logo&ab_channel=OneMoreCast</a></li>
+                  &nbsp;<a target="_blank" rel="noopener noreferrer"  className="link-source" href="https://www.youtube.com/watch?v=hKWREFjNWX4&ab_channel=OneMoreCast">https://www.youtube.com/watch?v=hKWREFjNWX4&ab_channel=OneMoreCast</a>,  &nbsp; 
+                  &nbsp;<a target="_blank" rel="noopener noreferrer"  className="link-source" href="https://www.youtube.com/watch?v=JJZcSHQFex8&feature=emb_logo&ab_channel=OneMoreCast">https://www.youtube.com/watch?v=JJZcSHQFex8&feature=emb_logo&ab_channel=OneMoreCast</a></li>
                   <li>Storey, Nate.<em> What are the best plants for aquaponics?.</em> 2014. URL Address: &nbsp;
-                  &nbsp;<a target="_blank" className="link-source" href="https://www.youtube.com/watch?v=3EnvAW2--Yg&feature=emb_logo&ab_channel=ZipGrow">https://www.youtube.com/watch?v=3EnvAW2--Yg&feature=emb_logo&ab_channel=ZipGrow</a></li>
+                  &nbsp;<a target="_blank" rel="noopener noreferrer"  className="link-source" href="https://www.youtube.com/watch?v=3EnvAW2--Yg&feature=emb_logo&ab_channel=ZipGrow">https://www.youtube.com/watch?v=3EnvAW2--Yg&feature=emb_logo&ab_channel=ZipGrow</a></li>
                   <li>Rocrick, Kimberly.<em> The Beginners Guide to Keeping Fish.</em> URL Address: 
-                  &nbsp;<a target="_blank" className="link-source" href="https://www.thepetexpress.co.uk/blog/blog-new-products/the-beginners-guide-to-keeping-fish/">https://www.thepetexpress.co.uk/blog/blog-new-products/the-beginners-guide-to-keeping-fish/</a> </li>
+                  &nbsp;<a target="_blank" rel="noopener noreferrer" className="link-source" href="https://www.thepetexpress.co.uk/blog/blog-new-products/the-beginners-guide-to-keeping-fish/">https://www.thepetexpress.co.uk/blog/blog-new-products/the-beginners-guide-to-keeping-fish/</a> </li>
                   <li>Aqueon. <em>How to fix cloudy water in a new fish tank.</em> 2017. URL Address: 
-                  &nbsp;<a target="_blank" className="link-source" href="https://www.aqueon.com/articles/how-to-fix-cloudy-tank-water-for-a-new-fish-tank">https://www.aqueon.com/articles/how-to-fix-cloudy-tank-water-for-a-new-fish-tank</a> </li>
+                  &nbsp;<a target="_blank" rel="noopener noreferrer" className="link-source" href="https://www.aqueon.com/articles/how-to-fix-cloudy-tank-water-for-a-new-fish-tank">https://www.aqueon.com/articles/how-to-fix-cloudy-tank-water-for-a-new-fish-tank</a> </li>
                   <li>Bernhard, Anne.<em> The nitrogen cycle: Processes, players and and human impact.</em> 2010. URL Address: 
-                  &nbsp;<a target="_blank" className="link-source" href="https://www.nature.com/scitable/knowledge/library/the-nitrogen-cycle-processes-players-and-human-15644632/">https://www.nature.com/scitable/knowledge/library/the-nitrogen-cycle-processes-players-and-human-15644632/</a> </li>
+                  &nbsp;<a target="_blank"  rel="noopener noreferrer" className="link-source" href="https://www.nature.com/scitable/knowledge/library/the-nitrogen-cycle-processes-players-and-human-15644632/">https://www.nature.com/scitable/knowledge/library/the-nitrogen-cycle-processes-players-and-human-15644632/</a> </li>
                   <li>Woods, Audrey.<em> Pros and cons of aquaponics – Small garden ideas.</em> 2020. URL Address: 
-                  &nbsp;<a target="_blank" className="link-source" href="https://smallgarden-ideas.com/pros-and-cons-of-aquaponics">https://smallgarden-ideas.com/pros-and-cons-of-aquaponics</a> </li>
+                  &nbsp;<a target="_blank"  rel="noopener noreferrer" className="link-source" href="https://smallgarden-ideas.com/pros-and-cons-of-aquaponics">https://smallgarden-ideas.com/pros-and-cons-of-aquaponics</a> </li>
                 </ul>
               </div>
             </div>
