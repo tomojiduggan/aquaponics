@@ -1,0 +1,88 @@
+            <div id="nitrogen-cycle" className="">
+              <div className="chevron-parent" id="nitrogen-cycle-unlink"><i className="fa fa-chevron-left"></i></div>
+              <div className="text-page">
+                <div className="text">
+                  <h1>Nitrogen Cycle</h1>
+                  <p>The nitrogen cycle is an essential part of nature which makes nitrogen recycling
+                    possible. It it seperated in these following steps:
+                  </p>
+                  <ol>
+                    <li>Nitrification</li>
+                    <li>Assimilation</li>
+                    <li>Ammonification</li>
+                    <li>Denitrification</li>
+                  </ol>
+                  <h2>Nitrification</h2>
+                  <p>Nitrification is the transformation of the present ammonia excreted by animals
+                    into nitrites. This is done by decomposition by various bacterias with the following
+                    chemical formulas<br/>
+                    {/* 2NH4+ + 3O2 → 2NO2– + 4H+ + 2H2O */}
+                    <strong>2NH<sub>4</sub> + 3O<sub>2</sub> -{'>'} 2NO<sub>2</sub><sup>-</sup> + 4H<sup>+</sup> + 2H<sub>2</sub>O</strong><br/>
+                    {/* 2NO2– + O2 → 2NO3– */}
+                    <strong>2NO<sub>2</sub><sup>-</sup> + O<sub>2</sub> -{'>'} 2NO<sub>3</sub><sup>-</sup></strong>
+                  </p>
+                  <h2>Assimilation</h2>
+                  <p>Plants absorb the present nitrogen, particularly nitrites in order to grow. Animals get it by either eating plants or eating other animals.</p>
+                  <h2>Ammonification</h2>
+                  <p>Whenever a plant of animal dies, the nitrogen within their system gets released back into nature and gets decomposed into ammonia by varius fungi and bacteria.</p>
+                  <h2>Denitrification</h2>
+                  <p>Nitrites present in the soil are, turned into nitrogen gaz and oxygen. Various species use this in order to have a supply of oxygen.</p>
+                </div>
+              </div>
+              <div className="img-page">
+                <img className="img" src={nitrogen}/>
+              </div>
+            </div>
+            <div id="usfulness">
+              <div className="chevron-parent" id="usfulness-unlink"><i className="fa fa-chevron-left"></i></div>
+              <div className="text-page">
+                <div className="text no-column">
+                  <h1>How the nitrogen cycle works in aquaponics</h1>
+                  <p>In aquaponic systems, the nitrogen cycle behaves similarly to how it does in nature,
+                    with fish, plants and bacteria.</p>
+                  <ol>
+                    <li>The fish excrete ammonia into the water</li>
+                    <li>Nitrosomonas, a type of bacteria digests ammonia into nitrites</li>
+                    <li>The nitrites then get digested once again by a species of bacteria named nitrospira, turning it into nitrates</li>
+                    <li>The plants absorb the nitrate present in the water, as it is one of its essential nutrients.</li>
+                  </ol>
+                </div>
+              </div>
+              <div className="img-page">
+                <img className="img" src={nitro}/>
+              </div>
+              
+            </div>
+            <div id="pro">
+              <div className="chevron-parent" id="pro-unlink"><i className="fa fa-chevron-left"></i></div>
+              <div className="text-page">
+                <div className="text">
+                  <h1>The advantages of aquaponics</h1>
+                  <h2>Less water consumption</h2>
+                  <p>Surprisingly, aquaponics uses about 90% less water than conventional farming
+                    This is because the water present in the system has a much lower surface area,
+                    having less of it be wasted by evaporation.
+                  </p>
+                  <p>Aquaponics consumes 90% less water than regular farming</p>
+                  <h2>Faster plant growth</h2>
+                  <p>Growing plants in water instead of soil can speed up their growth
+                      by twofolds. It is easier for them to absorb nutrients from water
+                      than in soil.
+                  </p>
+                  <h2>No use of pesticides</h2>
+                  <p>Whenever you eat a plant that grew from an aquaponic system, you can
+                    guarantee that no pesticide was used in it because if it was used,
+                    it would result in the fish in the system dying.
+                  </p>
+                  <h2>Conclusion: Highly efficient</h2>
+                  <p>With these list of advantages, we can deduct that aquaponics is an
+                    efficient way of growing food, growing more, does not contaminate and uses
+                    much less water, making it a good environmental choice.
+                  </p>
+                </div>
+              </div>
+              <div className="img-page">
+                <img className="img" src={aquaImg} id="aqua-img"/>
+              </div>
+            </div>
+            

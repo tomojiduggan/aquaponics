@@ -1,7 +1,7 @@
 import React from 'react'
 import "./style/navbar/navbar.css"
 
-const pages = ["intro", "explanation", "uses", "conclusion"]
+const pages = ["intro", "explanation", "experience", "conclusion"]
 
 class Navbar extends React.Component{
     capitalize(string){

@@ -3,7 +3,7 @@ import Page from './components/page'
 import './App.css';
 import Selector from './components/selector'
 import Navbar from './components/navbar'
-import Particles from 'react-particles-js';
+ import Particles from 'react-particles-js';
 
 
 class App extends React.Component{
@@ -13,7 +13,7 @@ class App extends React.Component{
     return (
       <div className="App">
         <Navbar/>
-        <Particles className="particles" params={
+        { <Particles className="particles" params={
                     {
                       "particles": {
                         "number": {
@@ -47,10 +47,12 @@ class App extends React.Component{
                           }
                       }
                       }
-                    }} ></Particles>
+                    }} >
+                      
+                    </Particles> }
         <Page name="intro"/>
         <Page name="explanation" />
-        <Page name="uses" />
+        <Page name="experience" />
   
         <Page name="conclusion" />
   

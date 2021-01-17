@@ -1,13 +1,169 @@
 
 
 .page{
+  overflow: hidden !important;
     height: 100vh;
+    .text-page{
+      position: relative;
+      width: 50vw;
+      height: 100vh;
+      .text{
+        width: 40vw;
+        display: block;
+        margin-left: 15vw;
+        margin-right: 5vw;
+        margin-top: 15vh;
+        column-count: 2;
+        column-gap: 20px;
+        column-rule: 1px solid rgb(194, 251, 255);
+        column-span: all;
+      }
+      .no-column{
+        columns: 1;
+        width: 30vw;
+        margin-left: 20vw;
+        margin-right: 20vw;
+      }
+    }
+    .img-page{
+      position: relative;
+      width: 50vw;
+      height: 100vh;
+      .img{
+        width: 30vw;
+        display: block;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-top: 15vh;
+      }
+      #aqua-img{
+        width: 35vw;
+        margin-left: 10vw;
+        margin-right: 5vw;
+        margin-top: 20vh;
+      }
+    }
+    .chevron-parent{
+      z-index: 10;
+      position: absolute;
+      top: 50%;
+      left: 30px;
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      border: transparent solid 2px;
+      transform: translateY(-50px);
+      transition: 0.5s;
+      .fa-chevron-left{
+        position: relative;
+        font-size: 60px;
+        margin-top: 22px;
+        margin-left: 22px;
+      }
+    }
+    .chevron-parent:hover{
+      border: white solid 2px;
+      transform: translateY(-50px) translateX(-10px);
+    }
+  
+    .right{
+      left:0% !important;
+    }
+    .text-explanation-div{
+      position: relative;
+      width: 50vw;
+      height: 100vh;
+      color: white;
+      .text-explanation{
+        width: 40vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15vh;
+        .fa-chevron-right{
+          transition: 0.5s color, 0.3s transform;
+          font-size: 16px;
+        }
+        .link:hover .fa-chevron-right{
+          transform: translateX(5px)
+        }
+        .link{
+          cursor: pointer;
+          transition: 0.5s;
+        }
+        .link:hover{
+          color: rgb(130, 180, 255);
+        }
+        .legend{
+          padding: 5px;
+          padding-top: 1px;
+          padding-bottom: 8px;
+          padding-left: 4px;
+          padding-right: 5px;
+          height: 10px;
+          width: 10px;
+          background-color: white;
+          color: black;
+          border-radius: 50%;
+          float: left;
+        }
+      }
+    }
+    .scemeImg-div{
+      width: 50vw;
+      height: 100vh;
+      .scemeImg{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15vh;
+        width: 40vw;
+    
+      }
+    }
+  
 }
 
 /* Google Fonts */
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
-
+@mixin page{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: -100%;
+  transition: 0.7s;
+  display: flex;
+  z-index: 3;
+  .fa-chevron-right{
+    transition: 0.5s color, 0.3s transform;
+    font-size: 16px;
+  }
+  .link:hover .fa-chevron-right{
+    transform: translateX(5px)
+  }
+  .link{
+    cursor: pointer;
+    transition: 0.5s !important;
+    font-size: 20px;
+    color: rgb(100, 110, 255);
+    animation: 3s pulse infinite;
+  }
+  .link:hover{
+    animation: none;
+  }
+  @keyframes pulse{
+    0%{
+      color: rgb(123, 132, 255);
+    }
+    50%{
+      color: rgb(150, 156, 231);
+    }
+    100%{
+      color: rgb(123, 132, 255);
+    }
+  }
+}
 
 #intro{
   background-color: rgba(0, 0, 0, 0);
@@ -50,23 +206,270 @@
   #graph-parent{
 
     #graph{
+      color: white;
     }
+  }
+
+  //FISH
+  #fish-icon-1{
+    position: absolute;
+    top: 40%;
+    width:80px;
+    opacity: 0.8;
+    pointer-events: none;
+    animation: swim 25s linear infinite;
+    @keyframes swim{
+        from{
+            left: -40%;
+        }
+        to{
+            left: 100%;
+        }
+    }
+  }
+  #fish-icon-2{
+    pointer-events: none;
+    position: absolute;
+    top: 69%;
+    width:40px;
+    transform: scaleX(-1);
+    animation: swim2 49s linear infinite;
+    @keyframes swim2{
+        from{
+            left: 100%;
+        }
+        to{
+            left: -20%;
+        }
+    }
+  }
+  #fish-icon-3{
+    pointer-events: none;
+    position: absolute;
+    top: 30%;
+    width:80px;
+    opacity: .8;
+    animation: swim3 45s linear infinite;
+    @keyframes swim3{
+        from{
+            left: -35%;
+        }
+        to{
+            left: 140%;
+        }
+    }
+  }
+  #fish-icon-4{
+    pointer-events: none;
+    position: absolute;
+    top: 90%;
+    width:80px;
+    animation: swim4 42s linear infinite;
+    transform: scaleX(-1);
+    @keyframes swim4{
+        from{
+            left: 120%;
+        }
+        to{
+            left: -40%;
+        }
+    }
+  }
+  .fish{
+    position: fixed !important;
+    z-index: -1;
   }
 }
 #explanation{
   background-color: rgb(46, 46, 46);
-  #graph-parent{
-    width: 700px;
-    position: relative;
-    height: 00px;
+  color: white;
+  display: flex;
+  .text-explanation-div{
+    width: 40vw;
+    height: 100vh;
+    .text-explanation{
+      margin-left: 5vw;
+    }
+  }
+  .scemeImg-div{
+    width: 60vw;
+    height: 100vh;
+    .scemeImg{
+      width: 45vw;
+    }
+  }
+  #nitrogen-cycle{
+    @include page;
+    background-color: rgb(33, 51, 65);
+    z-index: 3;
+    .text-page{
+      width: 40vw;
+      .text{
+        width: 30vw;
+        height: 65vh;
+        column-fill: auto;
+      }
+    }
+    .img-page{
+      width: 60vw;
+      .img{
+        width: 40vw;
+      }
+    }
+  }
+  #usfulness{
+    @include page;
+    background-color: rgb(11, 24, 31);
+    z-index: 4;
+    .text-page{
+      width: 40vw;
+      .text{
+        width: 30vw;
+      }
+    }
+    .img-page{
+      width: 60vw;
+      .img{
+        width: 40vw;
+      }
+    }
+  }
+  #pro{
+    @include page;
+    background-color: rgb(30, 84, 100);
+    z-index: 5;
+    .text-page{
+      width: 50vw;
+      .text{
+        column-fill: auto;
+        height: 60vh;
+        width: 40vw;
+        .source-link{
+          color: rgb(232, 155, 255);
+        }
+        .source-link:hover{
+          text-decoration: underline;
+          color: rgb(189, 118, 211);
+        }
+      }
+    }
+    .img-page{
+      width: 60vw;
+      .img{
+        width: 35vw;
+        margin-top: 25vh;
+        margin-left: 7vw;
+      }
+    }
+  }
+
+}
+  // #graph-parent{
+  //   width: 700px;
+  //   position: relative;
+  //   height: 00px;
+  //   padding: 100px;
+  // }
+//Uses!
+#experience{
+  background-color: rgba(0, 0, 0, 0.473);
+  color: white;
+  display: flex;
+  .img-div{
+    width: 50vw;
+    height: 100vh;
+    .img{
+      width: 45vw;
+      margin-top: 20vh;
+      margin-left: 0vw;
+    }
+  }
+  #fishkeeping{
+    @include page;
+    background-color: rgb(42, 61, 61);
+    .text-page{
+      width: 40vw;
+      .text{
+        margin-left: 10vw;
+        margin-right: 0;
+      }
+    }
+    .img-page{
+      width: 60vw !important;
+      .img{
+        width: 40vw !important;
+        margin-right: 10vw !important;
+
+      }
+    }
+  }
+  #problem{
+    @include page;
+    background-color: rgb(24, 24, 53);
+    .text-page{
+      width: 40vw;
+      .text{
+        margin-left: 10vw;
+        margin-right: 0;
+      }
+    }
+    .img-page{
+      width: 60vw !important;
+      .img{
+        width: 40vw !important;
+        margin-right: 10vw !important;
+
+      }
+    }
+  }
+  #plant{
+    @include page;
+    background-color: rgb(25, 25, 54);
+    .text-page{
+      width: 40vw;
+      .text{
+        margin-left: 10vw;
+        margin-top: 10vh;
+        margin-right: 0;
+      }
+    }
+    .img-page{
+      width: 60vw !important;
+      .img{
+        width: 40vw !important;
+        margin-right: 10vw !important;
+
+      }
+    }
   }
 }
-//Uses!
-#uses{
-  background-color: rgba(0, 0, 0, 0.473);
-}
 #conclusion{
-  background-color: rgb(92, 63, 63);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(18, 29, 100) 100%);  display: flex;
+  height: 100vh;
+  width: 100%;
+  #mask{
+    position: absolute;
+    width: 100%;
+    height: 75px;
+    background-color: rgb(24, 40, 63);
+  }
+  #text2{
+    width: 50vw;
+    height: 100vh;
+    background-color: rgba(27, 29, 39, 0);
+    color: white;
+    #text2-{
+      margin-left: 5vw;
+      margin-top: 15vh;
+      margin-right: 5vw;
+      .link-source{
+        color: rgb(170, 95, 255)
+      }
+      .link-source:hover{
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 

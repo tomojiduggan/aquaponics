@@ -6,13 +6,11 @@
   top: 45vh;
   z-index: 100;
   opacity: 0.8;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .grow {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   background-color: #023E8A !important;
 }
 
@@ -37,17 +35,13 @@
   border-radius: 50%;
   left: 5px;
   top: 5px;
-  -webkit-transition: border 0.5s, background-color 0.5s, -webkit-transform 0.5s;
-  transition: border 0.5s, background-color 0.5s, -webkit-transform 0.5s;
   transition: transform 0.5s, border 0.5s, background-color 0.5s;
-  transition: transform 0.5s, border 0.5s, background-color 0.5s, -webkit-transform 0.5s;
   position: absolute;
   border: 1px solid transparent;
 }
 
 .circle:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   background-color: #023E8A;
 }
 /*# sourceMappingURL=selector.css.map */

@@ -2,7 +2,7 @@ import React from 'react';
 import Circle from './circle'
 import './style/selector/selector.css'
 
-const pages = ["intro", "explanation", "uses", 'conclusion']
+const pages = ["intro", "explanation", "experience", 'conclusion']
 let selected = 0
 
 class Selector extends React.Component{

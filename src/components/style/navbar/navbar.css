@@ -19,25 +19,21 @@ a:hover {
   text-align: center;
   top: 0;
 }
-
 .navbar .nav-link {
   text-decoration: none;
   color: white !important;
   top: 20px;
   position: relative;
   text-align: center;
-  -webkit-transition: 0.5s !important;
   transition: 0.5s !important;
   font-size: 30px;
   margin-left: 20px;
   margin-right: 20px;
   border-bottom: 0px solid transparent;
 }
-
 .navbar .nav-link:hover {
   border-bottom: 1px solid white;
 }
-
 .navbar .selected {
   border-bottom: 2px solid white !important;
 }
